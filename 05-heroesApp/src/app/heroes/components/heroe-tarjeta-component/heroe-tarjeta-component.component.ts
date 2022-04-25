@@ -5,6 +5,10 @@ import { Heroe } from '../../pages/heroe/interfaces/heroes.interfaces';
   selector: 'app-heroe-tarjeta-component',
   templateUrl: './heroe-tarjeta-component.component.html',
   styles: [
+    `
+    mat-card {
+      margin-top: 20px;
+    } `
   ]
 })
 export class HeroeTarjetaComponentComponent  {

@@ -9,6 +9,9 @@ import { HeroesRoutingModule } from './heroes-routing.module';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { MaterialModule } from '../material/material.module';
 import { HeroeTarjetaComponentComponent } from './components/heroe-tarjeta-component/heroe-tarjeta-component.component';
+import { ImaggenPipe } from './pipes/imaggen.pipe';
+import { FormsModule } from '@angular/forms';
+import { ConfirmarComponent } from './components/confirmar/confirmar.component';
 
 
 
@@ -19,13 +22,16 @@ import { HeroeTarjetaComponentComponent } from './components/heroe-tarjeta-compo
     HeroeComponent,
     HomeComponent,
     ListadoComponent,
-    HeroeTarjetaComponentComponent
+    HeroeTarjetaComponentComponent,
+    ImaggenPipe,
+    ConfirmarComponent
   ],
   imports: [
     CommonModule,
     FlexLayoutModule,
     MaterialModule,
-    HeroesRoutingModule
+    HeroesRoutingModule,
+    FormsModule
   ]
 })
 export class HeroesModule { }
